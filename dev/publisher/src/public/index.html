@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message sender</title>
+</head>
+<body>
+  <h1>Message sender</h1>
+  <form id="messageForm">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" required />
+    <input type="submit" value="Send" />
+  </form>
+
+  <script>
+    const messageField = document.getElementById("message");
+
+    document.getElementById("messageForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Send the data using fetch
+      fetch("/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: messageField.value })
+      })
+      .then(response => {
+        if (response.ok) {
+          alert("Message sent successfully");
+          messageField.value = "";
+          messageField.focus();
+        } else {
+          console.error("Failed to send message");
+        }
+      })
+      .catch(error => {
+        console.error("An error occurred while sending the message:", error);
+      });
+    });
+
+    messageField.focus();
+  </script>
+</body>
+</body>
+</html>
