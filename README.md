@@ -8,8 +8,8 @@ This repo contains the sample application for the [Developing event-driven appli
 
 This project contains the following components:
 
-- [./app](./app) - the main "app" of the project. It simply listens to events on a Kafka topic and logs them
-- [./dev/publisher](./dev/publisher/) - a simple project intended to make it easy to publish messages into the topic the main app is listening to
+- [app/](./app) - the main "app" of the project. It simply listens to events on a Kafka topic and logs them
+- [dev/publisher/](./dev/publisher/) - a simple project intended to make it easy to publish messages into the topic the main app is listening to
 
 ## Development
 
