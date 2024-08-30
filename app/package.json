@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon src/index.js"
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.4"
   },
   "dependencies": {
