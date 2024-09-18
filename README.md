@@ -1,6 +1,6 @@
 # Developing event-driven applications with Kafka and Docker
 
-This repo contains the sample application for the [Developing event-driven applications with Kafka and Docker](#) guide on Docker Docs. While this project is written primarily in Node, the focus is on launching and using Kafka in development and the Kafka-related pieces can easily be adapted into any other language.
+This repo contains the sample application for the [Developing event-driven applications with Kafka and Docker](https://docs.docker.com/guides/use-case/kafka/) guide on Docker Docs. While this project is written primarily in Node, the focus is on launching and using Kafka in development and the Kafka-related pieces can easily be adapted into any other language.
 
 **Notice:** This sample repo is intended to support the guide mentioned above. As such, the application code is purposely kept simple to keep the focus on the guide's content and should not be considered production ready.
 
